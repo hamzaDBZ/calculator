@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: black;
+    width: 350px;
+    height: 500px;
+    margin: 60px auto;
+    padding: 12px;
+}
+
+.display {
+    background-color: white;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 12px auto;
+    padding: 8px;
+    height: 100px;
+    text-align: right;
+    align-content: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.other-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.other-buttons div {
+    background-color: aqua;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 1 1 30%;
+    height: 75px;
+    text-align: center;
+    align-content: center;
+}
+
+.buttons .numbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.numbers div {
+    background-color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 1 1 30%;
+    height: 60px;
+    text-align: center;
+    align-content: center;
+}
+.numbers .zero {
+    flex-basis: 64%;
+    flex-grow: 2;
+}
+
+.buttons .op {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 30%;
+}
+
+.op div {
+    background-color: yellow;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    flex-basis: 30%;
+    flex-shrink: 1;
+}
